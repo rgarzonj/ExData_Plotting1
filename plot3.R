@@ -11,7 +11,7 @@ data <- subset(data,Date2 <=as.Date("2007-02-02"))
 png(file="plot3.png")
 with(data, {
         # Initialize the plot and draw the first variable and the y label        
-        plot(When,Sub_metering_1, type="l", ylab="Energy sub metering" )
+        plot(When,Sub_metering_1, type="l", ylab="Energy sub metering",xlab="" )
         # Add the second variable with the option lines on the same plot
         lines(When,Sub_metering_2, type="l",col="red")
         # Add the third variable with the option lines on the same plot
